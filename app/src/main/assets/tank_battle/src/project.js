@@ -10514,7 +10514,7 @@ window.__require = (function t(e, o, n) {
                     o.Action_PreloadUIRes();
                 }),
                 (e.ShowUI_Waiting = function () {
-                  console.log("show waiting---");
+                  console.error("show waiting---");
                   var t = o.waitingNode();
                   null != t
                     ? (t.setParent(o.waitingCanvasNode()),
@@ -10906,7 +10906,7 @@ window.__require = (function t(e, o, n) {
                 //   },
                 // });
                   if (
-                    (console.log(
+                    (console.error(
                       "res loaded  : OnEvent_ResLoaded_UI_FightPrepare"
                     ),
                     null == t)
@@ -14299,6 +14299,15 @@ window.__require = (function t(e, o, n) {
                   .start();
               }),
               (e.prototype.onEvent_btn_NextLevel = function () {
+                //TODOO
+                h5Ubi.onCallShowInters({
+                  onAndroidWebView: () => {
+                    console.log("WebView");
+                  },
+                  onBrowser: () => {
+                    console.log("Browser-initGameBanner");
+                  },
+                });
                 this.closeUI(f.default.ShowUI_FightPrepare());
               }),
               (e.prototype.onEvent_btn_backChoiceLevel = function () {
@@ -21084,62 +21093,62 @@ window.__require = (function t(e, o, n) {
               },
               initGameBanner: function (t, e) {
                 console.log("initGameBanner");
-                var o = g(t, e);
-                if (m) o.active = 0;
-                else {
-                  var n = cc.find("New ScrollView", o);
-                  h = [];
-                  for (var i = 0; i < y.length; i++) {
-                    var a = cc.find("view/content/item", n),
-                      s = cc.find("view/content", n),
-                      u = cc.instantiate(a);
-                    u.x = 10 + 220 * i;
-                    var _ = cc.find("Mask", u),
-                      b = new cc.Node(),
-                      N = b.addComponent(cc.Sprite);
-                    (N.sizeMode = 0),
-                      (N.spriteFrame = new cc.SpriteFrame(y[i])),
-                      (b.width = r),
-                      (b.height = c),
-                      _.addChild(b),
-                      h.push(b),
-                      f.push(_),
-                      s.addChild(u);
-                  }
-                  console.log("btnArray: ", h);
-                  for (
-                    var C = function (t) {
-                        h[t].addComponent(cc.Button),
-                          h[t].on("click", function () {
-                            console.log("btnArray[i]", t),
-                              YYGGames.navigate("MainMenu", "MORE", d[t].id);
-                          }),
-                          h[t].on("mouseenter", function () {
-                            0 != f.length &&
-                              ((p = !1),
-                              (f[t].scaleX = 1.1),
-                              (f[t].scaleY = 1.1));
-                          }),
-                          h[t].on("mouseleave", function () {
-                            0 != f.length &&
-                              ((p = !0), (f[t].scaleX = 1), (f[t].scaleY = 1));
-                          });
-                        var e = document.getElementById("GameCanvas");
-                        e &&
-                          e.addEventListener("mouseout", function (e) {
-                            0 != f.length &&
-                              ((p = !0), (f[t].scaleX = 1), (f[t].scaleY = 1));
-                          });
-                      },
-                      S = 0;
-                    S < h.length;
-                    S++
-                  )
-                    C(S);
-                  l = setInterval(function () {
-                    v(s);
-                  }, 1);
-                }
+                // var o = g(t, e);
+                // if (m) o.active = 0;
+                // else {
+                //   var n = cc.find("New ScrollView", o);
+                //   h = [];
+                //   for (var i = 0; i < y.length; i++) {
+                //     var a = cc.find("view/content/item", n),
+                //       s = cc.find("view/content", n),
+                //       u = cc.instantiate(a);
+                //     u.x = 10 + 220 * i;
+                //     var _ = cc.find("Mask", u),
+                //       b = new cc.Node(),
+                //       N = b.addComponent(cc.Sprite);
+                //     (N.sizeMode = 0),
+                //       (N.spriteFrame = new cc.SpriteFrame(y[i])),
+                //       (b.width = r),
+                //       (b.height = c),
+                //       _.addChild(b),
+                //       h.push(b),
+                //       f.push(_),
+                //       s.addChild(u);
+                //   }
+                //   console.log("btnArray: ", h);
+                //   for (
+                //     var C = function (t) {
+                //         h[t].addComponent(cc.Button),
+                //           h[t].on("click", function () {
+                //             console.log("btnArray[i]", t),
+                //               YYGGames.navigate("MainMenu", "MORE", d[t].id);
+                //           }),
+                //           h[t].on("mouseenter", function () {
+                //             0 != f.length &&
+                //               ((p = !1),
+                //               (f[t].scaleX = 1.1),
+                //               (f[t].scaleY = 1.1));
+                //           }),
+                //           h[t].on("mouseleave", function () {
+                //             0 != f.length &&
+                //               ((p = !0), (f[t].scaleX = 1), (f[t].scaleY = 1));
+                //           });
+                //         var e = document.getElementById("GameCanvas");
+                //         e &&
+                //           e.addEventListener("mouseout", function (e) {
+                //             0 != f.length &&
+                //               ((p = !0), (f[t].scaleX = 1), (f[t].scaleY = 1));
+                //           });
+                //       },
+                //       S = 0;
+                //     S < h.length;
+                //     S++
+                //   )
+                //     C(S);
+                //   l = setInterval(function () {
+                //     v(s);
+                //   }, 1);
+                // }
               },
               initGameBox: function (t, e) {
                 // var o = i(t);
