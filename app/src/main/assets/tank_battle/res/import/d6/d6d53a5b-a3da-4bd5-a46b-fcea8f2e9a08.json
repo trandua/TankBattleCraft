@@ -1,0 +1,1 @@
+{"__type__":"cc.Material","_name":"M_FX_boom_guangci","_effectAsset":{"__uuid__":"82migssElAGb04Ws6NimQX"},"_techniqueData":{"0":{"defines":{},"props":{"tintColor":{"__type__":"cc.Color","r":255,"g":250,"b":177,"a":160},"mainTiling_Offset":{"__type__":"cc.Vec4","x":1,"y":1},"mainTexture":{"__uuid__":"a9nrBixsRI9aH1tdm3lP09"}}}}}

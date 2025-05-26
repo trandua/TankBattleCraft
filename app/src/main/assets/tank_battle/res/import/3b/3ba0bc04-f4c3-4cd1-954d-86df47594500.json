@@ -1,0 +1,1 @@
+{"__type__":"cc.Material","_name":"M_FX_Huojian_Trail","_effectAsset":{"__uuid__":"82migssElAGb04Ws6NimQX"},"_techniqueIndex":1,"_techniqueData":{"0":{"defines":{},"props":{"mainTiling_Offset":{"__type__":"cc.Vec4","x":1,"y":1},"tintColor":{"__type__":"cc.Color","r":180,"g":180,"b":180,"a":128},"mainTexture":{"__uuid__":"5ctVktvBtPdKZuQtdO3zHf"}}}}}

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "485717621456",
+    "project_id": "tank-battle-craft",
+    "storage_bucket": "tank-battle-craft.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:485717621456:android:90b97de3f60adf36f6bcd5",
+        "android_client_info": {
+          "package_name": "com.tanks.battel.craft.game"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCphrkkY8VkpTEHUVKNvOyTLSjdlb2tHdg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
