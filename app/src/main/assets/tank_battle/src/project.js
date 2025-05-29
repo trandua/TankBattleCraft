@@ -14486,7 +14486,7 @@ window.__require = (function t(e, o, n) {
               return (
                 (e.panel = null),
                 (e.dialogue_content = [
-                  "Hey, welcome to the Tank Stars - Battle Arena!",
+                  "Hey, welcome to the Tank Battle Craft!",
                   "First start building a small tank of your own!",
                   "Energy represents the upper limit of the num of blocks you can use.",
                   "Heart represents the HP of your tank!",
@@ -20701,7 +20701,7 @@ window.__require = (function t(e, o, n) {
         "use strict";
         cc._RF.push(e, "a69fe/2afBAcIJcb/Baktae", "YYGplatform"),
           (window.SOUNDFlag = !0);
-        var n = "Tank Stars - Battle Arena",
+        var n = "Tank Battle Craft",
           i = (function (t) {
             return (t = (t = (t = (t = (t = (t = (t = (t = (t = (t = (t =
               t.toLowerCase()).replace(/(^\s*)|(\s*$)/g, "")).replace(

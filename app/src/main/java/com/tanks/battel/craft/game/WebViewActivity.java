@@ -24,6 +24,7 @@ import androidx.annotation.Nullable;
 import androidx.webkit.WebViewAssetLoader;
 
 import com.example.h5gamebase.R;
+import com.kochava.tracker.Tracker;
 import com.tanks.battel.craft.game.ads.AdManager;
 import com.tanks.battel.craft.game.ads.adapter.AdAdapter;
 
@@ -102,6 +103,7 @@ public class WebViewActivity extends Activity {
         adContainerView = findViewById(R.id.ad_view_container);
         // Init Ads
         AdManager.init(this, billingManager, adContainerView);
+        Tracker.getInstance().startWithAppGuid(getApplicationContext(), "kotank-battle-craft-ik6emobx");
 
         loadingOverlay = findViewById(R.id.loadingOverlay);
 
