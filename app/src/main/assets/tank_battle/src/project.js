@@ -11396,38 +11396,39 @@ window.__require = (function t(e, o, n) {
                   .delay(0.8 - 0.1 * this._count)
                   .call(
                     function () {
-                      this._count > 6
-                        ? (this.node
-                            .getChildByName("black")
-                            .getComponent(cc.Button).interactable = !0)
-                        : (1 == this._count
-                            ? (this.panel.children[this._count]
-                                .getComponent(cc.Animation)
-                                .play(
-                                  "cartoon_" +
-                                    this.panel.children[this._count].name +
-                                    "_x"
-                                ),
-                              (this.panel.children[this._count].active = !0),
-                              cc
-                                .tween(this)
-                                .delay(3)
-                                .call(
-                                  function () {
-                                    this.panel.children[2].active = !0;
-                                  }.bind(this)
-                                )
-                                .start())
-                            : (this.panel.children[this._count]
-                                .getComponent(cc.Animation)
-                                .play(
-                                  "cartoon_" +
-                                    this.panel.children[this._count].name +
-                                    "_x"
-                                ),
-                              (this.panel.children[this._count].active = !0)),
-                          this._count++,
-                          this.ShowUI_Cartoon());
+                      // this._count > 6
+                      //   ? (this.node
+                      //       .getChildByName("black")
+                      //       .getComponent(cc.Button).interactable = !0)
+                      //   : (1 == this._count
+                      //       ? (this.panel.children[this._count]
+                      //           .getComponent(cc.Animation)
+                      //           .play(
+                      //             "cartoon_" +
+                      //               this.panel.children[this._count].name +
+                      //               "_x"
+                      //           ),
+                      //         (this.panel.children[this._count].active = !0),
+                      //         cc
+                      //           .tween(this)
+                      //           .delay(3)
+                      //           .call(
+                      //             function () {
+                      //               this.panel.children[2].active = !0;
+                      //             }.bind(this)
+                      //           )
+                      //           .start())
+                      //       : (this.panel.children[this._count]
+                      //           .getComponent(cc.Animation)
+                      //           .play(
+                      //             "cartoon_" +
+                      //               this.panel.children[this._count].name +
+                      //               "_x"
+                      //           ),
+                      //         (this.panel.children[this._count].active = !0)),
+                      //     this._count++,
+                      //     this.ShowUI_Cartoon());
+                      this.onEvent_btn_StartGame();
                     }.bind(this)
                   )
                   .start();
